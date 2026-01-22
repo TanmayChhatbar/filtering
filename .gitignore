@@ -1,3 +1,5 @@
 *.lck
 \#auto_saved_files\#
 *backups/*
+fp-info-cache
+export*
