@@ -1659,6 +1659,18 @@
 		)
 		(uuid b4949ec1-31de-4728-a596-449cdd431249)
 	)
+	(rectangle
+		(start 139.7 21.59)
+		(end 180.34 45.72)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid beb2ae72-d8cb-41ce-94ed-21be9a78bc1a)
+	)
 	(text "V+\nSout+\nSout-\nGND"
 		(exclude_from_sim no)
 		(at 90.932 29.972 0)
@@ -1713,6 +1725,17 @@
 			(justify left top)
 		)
 		(uuid "8c16f0cb-f4e4-4b9b-856a-f81fd18c5d3f")
+	)
+	(text "IO Jumper"
+		(exclude_from_sim no)
+		(at 141.224 23.114 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "9490b725-b60f-467f-b485-4a76bcf116fe")
 	)
 	(text "LTC660/MAX660\nVoltage inverter"
 		(exclude_from_sim no)
@@ -1839,6 +1862,16 @@
 	)
 	(wire
 		(pts
+			(xy 154.94 35.56) (xy 163.83 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "365ae824-a9ad-483c-b20c-e7b1e44472dd")
+	)
+	(wire
+		(pts
 			(xy 120.65 63.5) (xy 139.7 63.5)
 		)
 		(stroke
@@ -1959,6 +1992,26 @@
 	)
 	(wire
 		(pts
+			(xy 154.94 30.48) (xy 163.83 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9122568f-a6b1-4daa-9206-9cb049704835")
+	)
+	(wire
+		(pts
+			(xy 154.94 38.1) (xy 163.83 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95db7f79-eced-491b-8bbf-8ab65ec82d18")
+	)
+	(wire
+		(pts
 			(xy 139.7 73.66) (xy 147.32 73.66)
 		)
 		(stroke
@@ -2056,6 +2109,16 @@
 			(type default)
 		)
 		(uuid "cb556c1f-f1b5-4768-958f-b067965c4346")
+	)
+	(wire
+		(pts
+			(xy 154.94 33.02) (xy 163.83 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ceacef2e-68c2-42aa-94f4-3dabe48a4ba7")
 	)
 	(wire
 		(pts
@@ -2318,6 +2381,81 @@
 			(project ""
 				(path "/4d205d4b-87da-405c-b46c-eb9a69fc995b"
 					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x04_Pin")
+		(at 168.91 35.56 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0dc2d9c6-05d5-4f66-9304-15ddd0a5d7a8")
+		(property "Reference" "J4"
+			(at 161.036 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x04_Pin"
+			(at 161.29 28.448 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
+			(at 168.91 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 168.91 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x04, script generated"
+			(at 168.91 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fde7d0fb-b103-4621-889a-2c09bcb500fa")
+		)
+		(pin "2"
+			(uuid "5ae919ad-c029-4bae-b928-0579e21a1ae4")
+		)
+		(pin "3"
+			(uuid "694ae23f-f6cb-45f8-a047-9c32360794f9")
+		)
+		(pin "4"
+			(uuid "40fa0496-6d86-4bd1-9fac-dffa52e3fbab")
+		)
+		(instances
+			(project "filtering"
+				(path "/4d205d4b-87da-405c-b46c-eb9a69fc995b"
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -2729,28 +2867,28 @@
 			)
 		)
 		(pin "2"
-			(uuid "de5aa1f0-1062-4467-8a63-d5cf1f1124c7")
+			(uuid "de5aa1f0-1062-4467-8a63-d5cf1f1124c8")
 		)
 		(pin "6"
-			(uuid "f8893e02-01dd-4be5-b6a7-b329f96a1090")
+			(uuid "f8893e02-01dd-4be5-b6a7-b329f96a1091")
 		)
 		(pin "1"
-			(uuid "3138bec3-53b1-45ec-b154-62f48f79d7bd")
+			(uuid "3138bec3-53b1-45ec-b154-62f48f79d7be")
 		)
 		(pin "5"
-			(uuid "9e946db9-e1d3-4103-8d7e-88f061f367a4")
+			(uuid "9e946db9-e1d3-4103-8d7e-88f061f367a5")
 		)
 		(pin "4"
-			(uuid "33fad882-ca7c-436e-922d-53f5a5521640")
+			(uuid "33fad882-ca7c-436e-922d-53f5a5521641")
 		)
 		(pin "3"
-			(uuid "62832269-f364-48f8-af87-f3941ac34e91")
+			(uuid "62832269-f364-48f8-af87-f3941ac34e92")
 		)
 		(pin "7"
-			(uuid "252593fd-5621-497b-833d-37b5e7f4f1fd")
+			(uuid "252593fd-5621-497b-833d-37b5e7f4f1fe")
 		)
 		(pin "8"
-			(uuid "9491278d-10bf-4833-b34d-ab1aeb36e194")
+			(uuid "9491278d-10bf-4833-b34d-ab1aeb36e195")
 		)
 		(instances
 			(project ""
@@ -3232,6 +3370,79 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x04_Socket")
+		(at 149.86 35.56 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8505f6e7-c127-42d1-a7fb-dbce9b157dfb")
+		(property "Reference" "J3"
+			(at 150.368 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x04_Socket"
+			(at 156.718 27.686 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical"
+			(at 149.86 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 149.86 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x04, script generated"
+			(at 149.86 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "e0e6bf9a-88e0-41ea-801e-79ed78ce37a4")
+		)
+		(pin "4"
+			(uuid "a696279d-a3a7-4300-b293-3da5f501ced0")
+		)
+		(pin "2"
+			(uuid "dd6cdf8c-5592-4025-91a8-a3b4a7f711dc")
+		)
+		(pin "1"
+			(uuid "b410b559-501b-49b1-8500-4eb8d7e73208")
+		)
+		(instances
+			(project "filtering"
+				(path "/4d205d4b-87da-405c-b46c-eb9a69fc995b"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 162.56 85.09 0)
 		(unit 1)
@@ -3693,28 +3904,28 @@
 			)
 		)
 		(pin "2"
-			(uuid "de5aa1f0-1062-4467-8a63-d5cf1f1124c7")
+			(uuid "de5aa1f0-1062-4467-8a63-d5cf1f1124c9")
 		)
 		(pin "6"
-			(uuid "f8893e02-01dd-4be5-b6a7-b329f96a1090")
+			(uuid "f8893e02-01dd-4be5-b6a7-b329f96a1092")
 		)
 		(pin "1"
-			(uuid "3138bec3-53b1-45ec-b154-62f48f79d7bd")
+			(uuid "3138bec3-53b1-45ec-b154-62f48f79d7bf")
 		)
 		(pin "5"
-			(uuid "9e946db9-e1d3-4103-8d7e-88f061f367a4")
+			(uuid "9e946db9-e1d3-4103-8d7e-88f061f367a6")
 		)
 		(pin "4"
-			(uuid "33fad882-ca7c-436e-922d-53f5a5521640")
+			(uuid "33fad882-ca7c-436e-922d-53f5a5521642")
 		)
 		(pin "3"
-			(uuid "62832269-f364-48f8-af87-f3941ac34e91")
+			(uuid "62832269-f364-48f8-af87-f3941ac34e93")
 		)
 		(pin "7"
-			(uuid "252593fd-5621-497b-833d-37b5e7f4f1fd")
+			(uuid "252593fd-5621-497b-833d-37b5e7f4f1ff")
 		)
 		(pin "8"
-			(uuid "9491278d-10bf-4833-b34d-ab1aeb36e194")
+			(uuid "9491278d-10bf-4833-b34d-ab1aeb36e196")
 		)
 		(instances
 			(project ""
