@@ -91,8 +91,8 @@ components = findall(fig, '-property', 'FontSize');
 set(components, 'FontSize', 20);
 components = findall(fig, 'Type', 'Line');
 set(components, 'LineWidth', 4);
-p.time.delay = plot(timeAx, [0 0], (yl*[.95; .05]).*[1 1], '--', 'Color', [.5 .5 .5], 'linewidth', 1);
-p.time.ratio = plot(timeAx, [0 0], [0 0], '--', 'Color', [.5 .5 .5], 'linewidth', 1);
+p.time.delay = plot(timeAx, [0 0], (yl*[.95; .05]).*[1 1], '--', 'Color', [.5 .5 .5], 'linewidth', 1, 'handlevisibility', 'off');
+p.time.ratio = plot(timeAx, [0 0], [0 0], '--', 'Color', [.5 .5 .5], 'linewidth', 1, 'handlevisibility', 'off');
 
     function updatePlots(source, event)
         % ValueChanging events contain the current value before it is committed.
@@ -171,7 +171,7 @@ p.time.ratio = plot(timeAx, [0 0], [0 0], '--', 'Color', [.5 .5 .5], 'linewidth'
         end
         p.time.inputPeak.Value = inputPeak;
         p.time.outputPeak.Value = inputPeak + delay;
-        title(timeAx, sprintf('Phase: %+.1f deg', phase*180/pi));
+        title(timeAx, sprintf('Phase: %.1f deg', -phase*180/pi));
         xlim(timeAx, [0 t(end)])
         ylim(timeAx, 1.1*max(1, abs(chosen))*[-1 1]);
         yl = ylim(timeAx);
@@ -179,7 +179,7 @@ p.time.ratio = plot(timeAx, [0 0], [0 0], '--', 'Color', [.5 .5 .5], 'linewidth'
         p.time.delay.XData = [inputPeak inputPeak + delay];
         p.time.delay.YData = [delayHeight delayHeight];
         p.time.delayText.Position = [inputPeak + delay/2 delayHeight 0];
-        p.time.delayText.String = sprintf('Delay = %.1f deg', -phase*180/pi);
+        p.time.delayText.String = sprintf('Phase = %.1f deg', -phase*180/pi);
         ratioX = 0.85/selected;
         p.time.ratio.XData = [ratioX ratioX];
         outputPeak = abs(chosen);
